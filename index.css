@@ -1,4 +1,13 @@
-*{
+:root{
+       --darkest:rgb(30,15,39);
+    --dark: #402B56;
+    --medium:#624E73;
+    --light:#C6A7CA;
+    --filler: rgba(139,215,113,.7);
+    --text-col:#F2EAE3;
+}
+    
+    *{
     box-sizing: border-box;
     margin:0;
     padding:0;
@@ -12,12 +21,12 @@ html{
 }
 
 .hero{
-    background-color: #ABD08A;
+    background-color: var(--dark);
     width: 100%;
     height:35vh;
 }
 header{
-    background-color: #ABD08A;
+    background-color: var(--medium);
     padding: 10px;
 }
 .hero img{
@@ -31,7 +40,7 @@ header{
     box-shadow: 2px 2px 2px 2px #283A17;
 }
 .add-items,.display-items{
-    background-color:#FCEED9 ;
+    background-color:var(--dark) ;
 }
 .add-items{
     height: 10vh;
@@ -57,19 +66,19 @@ header{
     width:20%;
     max-width: 200px;
     height:35px;
-    background-color: #ABD08A;
+    background-color: var(--dark);
     border-radius: 10px;
     font-size: .9em;
     font-weight: 600;
     margin-top: 7vh;
 }
 #add-button:hover{
- background-color: #735422;
- color: #fff;
+ background-color: var(--dark);
+ color: var(--text-color);
 }
 .display-items{
     height: 100vh;
-    background-color: #FCEED9;
+    background-color: var(--dark);
     padding: 60px 10%;
 }
 #list-items li{
@@ -86,14 +95,14 @@ ul{
 }
 ul li{
     padding: 5px 1em;
-    background-color: #ABD08A;
+    background-color: var(--dark);
     border-radius: 20px;
-    box-shadow: 2px 2px #283A17;
+    box-shadow: 2px 2px var(--filler);
     text-align: center;
     
 }
 ul li:hover{
-    background-color: #735422;
+    background-color: var(--darkest);
     color: #fff;
     cursor: pointer;
 }
